@@ -62,7 +62,7 @@ const Quizquestions = () => {
     
     return (
         <>
-            <h2>{quizButton ? "Quiz questions" : "Quiz finished"}</h2>
+            <h2 className="questionHeader">{quizButton ? "Quiz questions" : "Quiz finished"}</h2>
             {quizButton === true && <div>
                 <h2>Question attempt time remaining in seconds {timer}</h2>
                 <h3>{questions[currentQuestion].prompt}</h3>
